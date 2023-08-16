@@ -1,4 +1,12 @@
 /*
+ * @Author: 天勇 343975805@qq.com
+ * @Date: 2022-07-07 14:43:28
+ * @LastEditors: 天勇 343975805@qq.com
+ * @LastEditTime: 2023-08-16 16:14:43
+ * @FilePath: /dart/GeodeticData/Dart 1-16讲源码/demo05/03 break和continue.dart
+ * @Description: 
+ */
+/*
 			break语句功能:
           1、在switch语句中使流程跳出switch结构。
           2、在循环语句中使流程跳出当前循环,遇到break 循环终止，后面代码也不会执行
@@ -18,71 +26,61 @@
 
 */
 
-
 main() {
+  // for(var i=1;i<=10;i++){
+  //   print(i);
+  // }
 
-    // for(var i=1;i<=10;i++){
-    //   print(i);
-    // }
+  //1、如果i等于4的话跳过
+/* 
+    for(var i=1;i<=10;i++){
+      if(i==4){
+        continue;  /*跳过当前循环体 然后循环还会继续执行*/
+      }
+      print(i);
+    }
+   */
 
+  //2、如果 i等于4的话跳出循环
 
-    //1、如果i等于4的话跳过
+ /*  for (var i = 1; i <= 10; i++) {
+    if (i == 4) {
+      break; /*跳出循环体*/
+    }
+    print(i);
+  }
+ */
+  //3、break语句只能向外跳出一层
 
-    // for(var i=1;i<=10;i++){
-    //   if(i==4){
-    //     continue;  /*跳过当前循环体 然后循环还会继续执行*/
-    //   }
-    //   print(i);
-    // }
-  
-
-
-    //2、如果 i等于4的话跳出循环
-
-    // for(var i=1;i<=10;i++){
-    //   if(i==4){
-    //     break;  /*跳出循环体*/
-    //   }
-    //   print(i);
-    // }
-      
-
-    //3、break语句只能向外跳出一层
-
-
-    	//  for(var i=0;i<5;i++){	 	           	
-			//   	print('外层---$i');
-      //     for(var j=0;j<3;j++){            
-      //       if(j==1){
-      //         break;
-      //       }
-      //       print('里层$j');	
-      //     }	
-			//  }
-
-
+  //  for(var i=0;i<5;i++){
+  //   	print('外层---$i');
+  //     for(var j=0;j<3;j++){
+  //       if(j==1){
+  //         break;
+  //       }
+  //       print('里层$j');
+  //     }
+  //  }
 
   //4、while循环 break跳出循环
 
-  var i=1;
+  /*  var i=1;
   while(i<=10){
     if(i==4){
       break;
     }
     print(i);
     i++;
-  }
+  } */
 
-
-  // var sex="男";
-  // switch (sex) {
-  //   case "男":
-  //     print('男');
-  //     break;
-  //   case "女":
-  //     print('男');
-  //     break;
-  //   default:
-  // }
-    
+ /*  var sex="男";
+  switch (sex) {
+    case "男":
+      print('男');
+      break;
+    case "女":
+      print('男');
+      break;
+    default:
+  } */
 }
