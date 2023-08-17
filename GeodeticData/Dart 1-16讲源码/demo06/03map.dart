@@ -1,4 +1,12 @@
 /*
+ * @Author: 天勇 343975805@qq.com
+ * @Date: 2022-07-07 14:45:24
+ * @LastEditors: 天勇 343975805@qq.com
+ * @LastEditTime: 2023-08-17 10:12:12
+ * @FilePath: /dart/GeodeticData/Dart 1-16讲源码/demo06/03map.dart
+ * @Description: 
+ */
+/*
   映射(Maps)是无序的键值对：
 
     常用属性：
@@ -54,11 +62,11 @@ void main(){
       "sex":"男"
     };
 
-    // person.addAll({
-    //   "work":['敲代码','送外卖'],
-    //   "height":160
-    // });
-    // print(person);
+    person.addAll({
+      "work":['敲代码','送外卖'],
+      "height":160
+    });
+    print(person);
 
 
 

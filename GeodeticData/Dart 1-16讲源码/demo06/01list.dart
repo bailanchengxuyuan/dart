@@ -1,4 +1,12 @@
 /*
+ * @Author: 天勇 343975805@qq.com
+ * @Date: 2022-07-07 14:45:06
+ * @LastEditors: 天勇 343975805@qq.com
+ * @LastEditTime: 2023-08-17 10:01:45
+ * @FilePath: /dart/GeodeticData/Dart 1-16讲源码/demo06/01list.dart
+ * @Description: 
+ */
+/*
 List里面常用的属性和方法：
 
     常用属性：
@@ -26,67 +34,58 @@ List里面常用的属性和方法：
 
 */
 
-
-void main(){
-
-  // List myList=['香蕉','苹果','西瓜'];
-  // print(myList[1]);
-
+void main() {
+  List myList = ['香蕉', '苹果', '西瓜'];
+  print(myList[1]);
+  print(myList.length);
+  print(myList.reversed);
+  print(myList.isEmpty);
+  print(myList.isNotEmpty);
+  /* 创建固定长度的list */
+  List l1 = List<String>.filled(2, '');
+  print(l1);
 
   // var list=new List();  //新版本没法使用
   // list.add('111');
   // list.add('222');
   // print(list);
 
-
 //List里面的属性：
-    // List myList=['香蕉','苹果','西瓜'];
-    // print(myList.length);
-    // print(myList.isEmpty);
-    // print(myList.isNotEmpty);
-    // print(myList.reversed);  //对列表倒序排序
-    // var newMyList=myList.reversed.toList();
-    // print(newMyList);
+  // List myList=['香蕉','苹果','西瓜'];
+  // print(myList.length);
+  // print(myList.isEmpty);
+  // print(myList.isNotEmpty);
+  // print(myList.reversed);  //对列表倒序排序
+  // var newMyList=myList.reversed.toList();
+  // print(newMyList);
 
 //List里面的方法：
 
+  // List myList=['香蕉','苹果','西瓜'];
+  //myList.add('桃子');   //增加数据  增加一个
+  // myList.addAll(['桃子','葡萄']);  //拼接数组
+  // print(myList);
+  //print(myList.indexOf('苹x果'));    //indexOf查找数据 查找不到返回-1  查找到返回索引值
 
-    // List myList=['香蕉','苹果','西瓜'];
-    //myList.add('桃子');   //增加数据  增加一个
-    // myList.addAll(['桃子','葡萄']);  //拼接数组
-    // print(myList);
-    //print(myList.indexOf('苹x果'));    //indexOf查找数据 查找不到返回-1  查找到返回索引值
+  // myList.remove('西瓜');
+  // myList.removeAt(1);
+  // print(myList);
 
+  // List myList=['香蕉','苹果','西瓜'];
+  // myList.fillRange(1, 2,'aaa');  //修改
+  // myList.fillRange(1, 3,'aaa');
 
-    // myList.remove('西瓜');
-    // myList.removeAt(1);
-    // print(myList);
-  
+  // myList.insert(1,'aaa');      //插入  一个
+  // myList.insertAll(1, ['aaa','bbb']);  //插入 多个
+  // print(myList);
 
+  // List myList=['香蕉','苹果','西瓜'];
+  // var str=myList.join('-');   //list转换成字符串
+  // print(str);
+  // print(str is String);  //true
 
-
-    // List myList=['香蕉','苹果','西瓜'];
-    // myList.fillRange(1, 2,'aaa');  //修改
-    // myList.fillRange(1, 3,'aaa');  
-
-    // myList.insert(1,'aaa');      //插入  一个
-    // myList.insertAll(1, ['aaa','bbb']);  //插入 多个
-    // print(myList);
-
-
-
-
-
-
-    // List myList=['香蕉','苹果','西瓜'];
-    // var str=myList.join('-');   //list转换成字符串
-    // print(str);
-    // print(str is String);  //true
-
-
-    var str='香蕉-苹果-西瓜';
+  /* var str='香蕉-苹果-西瓜';
     var list=str.split('-');
     print(list);
-    print(list is List);
-
+    print(list is List); */
 }
